@@ -22,7 +22,7 @@ services:
       - 9000:9000
     volumes:
       - hadoop_namenode:/hadoop/dfs/name
-      - ./data:/home/data
+      - ./Cloud_Computing_Project/data:/home/Cloud_Computing_Project/data
     environment:
       - CLUSTER_NAME=test
     env_file:
@@ -166,7 +166,7 @@ services:
     ports:
         - "8888:8888"
     volumes:
-        - ./data:/home/jovyan/work/ccom_project/data
+        - ./Cloud_Computing_Project/data:/home/jovyan/work/Cloud_Computing_Project/data
         - ./events:/tmp/spark-events
     command: bash -c "start-notebook.sh --ip=0.0.0.0 --allow-root --NotebookApp.token=''" 
 
