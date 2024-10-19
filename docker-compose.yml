@@ -168,5 +168,6 @@ services:
     volumes:
         - ./data:/home/jovyan/work/data
         - ./events:/tmp/spark-events
+        - ./Individual_Project_Type_II.ipynb:/home/jovyan/work/Individual_Project_Type_II.ipynb
     command: bash -c "start-notebook.sh --ip=0.0.0.0 --allow-root --NotebookApp.token=''" 
 
